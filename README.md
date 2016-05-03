@@ -16,3 +16,10 @@ Generates the following output:
 [mainwindow]: https://raw.githubusercontent.com/agren/agren.github.io/master/calltreebrowser/img/calltreebrowser_main.png "Main window"
 
 A `*` after the function name means the function is present earlier in the call chain.
+
+## Usage
+```java CallBrowser inputfile```
+
+## Compile
+To build:
+Run `ant` from src directory. Or compile the java files using `javac`.
