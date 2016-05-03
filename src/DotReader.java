@@ -34,7 +34,7 @@ public class DotReader {
 	public static HashMap<String, ArrayList<String>> readDot(BufferedReader reader) throws IOException {
 		HashMap<String, ArrayList<String>> callMap = new HashMap<String, ArrayList<String>>();
 		String line;
-		Pattern callerCalleePattern = Pattern.compile("\\s*(\\w+)\\s*->\\s*(\\w+)\\s*;");
+		Pattern callerCalleePattern = Pattern.compile("\\s*(\\w+)\\s*->\\s*(.+)\\s*;", Pattern.UNICODE_CHARACTER_CLASS);
 		while ((line = reader.readLine()) != null) {
 			line = line.split("//")[0];
 			Matcher callerCalleeMatcher = callerCalleePattern.matcher(line);
